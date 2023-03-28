@@ -6,29 +6,39 @@ body {
   background-color: rgb(226 232 240 / 80%);
 }
 
-.upperBox {
-  box-sizing: inherit;
+.center-container {
   display: flex;
+  height: 100vh;
+  width: 100vmax;
+}
+.side-box {
+  width: 40%;
+  margin: 0 150px 0;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  top: 50%;
+  font-family: "Poppins", sans-serif;
+}
+
+.upperBox {
   background-color: white;
-  width: 70%;
-  height: 500px;
   border-radius: 20px;
-  margin: 0 auto;
-  margin-top: 20px;
+  width: 100%;
+  margin: 30px 30px 50px;
 }
 
 .upper-text-wrapper {
-  display: inherit;
-  margin-top: 30px;
-  margin-left: 55px;
+  display: flex;
+  padding-top: 20px;
+  margin-left: 20px;
 }
 
 .upperText {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Poppins", sans-serif;
   color: #0f172a;
   font-size: 16px;
-  margin-bottom: 430px;
-  margin-left: 40px;
+  margin: 20px;
   padding: 10px;
   border-radius: 10px;
 }
@@ -37,17 +47,35 @@ body {
   background-color: rgb(226 232 240 / 80%);
 }
 
-.lowerBox {
-  background-color: blue;
-  margin-top: 2100px;
-  margin-bottom: 20px;
-  height: 20em;
-  width: 100%;
+.hello-text {
+  margin-left: 45px;
+  margin-top: 100px;
+  margin-right: 50px;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #2563eb;
+  --tw-gradient-to: #9333ea;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
-.lowerText {
-  font-family: "Courier New", Courier, monospace;
-  color: white;
-  font-size: 12px;
-  margin-top: 7px;
+.introduction-text {
+  box-sizing: inherit;
+  top: auto;
+  bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #0f172a;
+  margin-left: 50px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 50px;
 }
