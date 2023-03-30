@@ -1,17 +1,55 @@
-body {
-  box-sizing: border-box;
-  padding: 0;
-  border: none;
+/* layout for every element */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* style for body element */
+body {
+  min-height: 100vh;
+  width: 100%;
   background-color: rgb(226 232 240 / 80%);
 }
 
-.center-container {
+/************NAVBAR STYLE BEGINS************************************************************/
+/* navigation bar WRAPPER style, uppermost element */
+.navbar-wrapper {
+  min-height: inherit;
+  width: inherit;
   display: flex;
-  height: 100vh;
-  width: 100vmax;
+  background-color: white;
+  border-radius: 20px;
+  margin: 30px;
+  padding-left: 20px;
+  position: relative;
+  left: 50%;
+  width: 50%;
 }
-.side-box {
+
+/* navigation bar TEXT style */
+.navbar-text {
+  font-family: "Poppins", sans-serif;
+  color: #0f172a;
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* navigation bar hover */
+.navbar-text:hover {
+  background-color: rgb(226 232 240 / 80%);
+}
+/************NAVBAR STYLE ENDS************************************************************/
+
+/************LEFT CONTAINER BEGINS********************************************************/
+
+.main-middle-container {
+  display: flex;
+}
+
+.mid-left-box {
   width: 40%;
   margin: 0 150px 0;
   height: fit-content;
@@ -21,33 +59,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.upperBox {
+.rightBox {
   background-color: white;
   border-radius: 20px;
   width: 100%;
   margin: 30px 30px 50px;
 }
 
-.upper-text-wrapper {
-  display: flex;
-  padding-top: 20px;
-  margin-left: 20px;
-}
-
-.upperText {
+.rightBox-text-wrapper {
+  box-sizing: inherit;
+  top: auto;
+  bottom: 0;
   font-family: "Poppins", sans-serif;
-  color: #0f172a;
   font-size: 16px;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 10px;
+  color: #0f172a;
+  margin-left: 50px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-right: 50px;
 }
 
-.upperText:hover {
-  background-color: rgb(226 232 240 / 80%);
-}
-
-.hello-text {
+.rightBox-hello-text {
   margin-left: 45px;
   margin-top: 100px;
   margin-right: 50px;
@@ -64,18 +97,4 @@ body {
   font-size: 70px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-}
-
-.introduction-text {
-  box-sizing: inherit;
-  top: auto;
-  bottom: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: #0f172a;
-  margin-left: 50px;
-  letter-spacing: 1px;
-  line-height: 30px;
-  margin-top: 10px;
-  margin-right: 50px;
 }
