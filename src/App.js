@@ -1,12 +1,12 @@
-import MiddleContainer from "../components/MiddleContainer";
-import NavBar from "../components/Navbar";
+import LeftMainContainer from "./components/LeftMainContainer";
+import RightMainContainer from "./components/RightMainContainer";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="window-container">
-      <NavBar />
-      <MiddleContainer />
+      <LeftMainContainer />
+      <RightMainContainer />
     </div>
   );
 }
