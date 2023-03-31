@@ -1,14 +1,24 @@
-function NavText({ value }) {
-  return <div className="navbar-text">{value}</div>;
-}
+import { Link } from 'react-router-dom';
+
 
 export default function NavBar() {
   return (
     <div className="navbar-wrapper">
-      <NavText value="About" />
-      <NavText value="Projects" />
-      <NavText value="Blog" />
-      <NavText value="Contact" />
+      <div className="navbar-text">
+        <Link to = "/about">About</Link>
+      </div>
+
+      <div className="navbar-text">
+        <Link to = "/projects">Projects</Link>
+      </div>
+
+      <div className="navbar-text">
+        <Link to = "/blog">Blog</Link>
+      </div>
+
+      <div className="navbar-text">
+        <Link to = "/contact">Contact</Link>
+      </div>
     </div>
   );
 }

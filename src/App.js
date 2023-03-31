@@ -1,12 +1,25 @@
-import LeftMainContainer from "./components/LeftMainContainer";
-import RightMainContainer from "./components/RightMainContainer";
+import HomePage from "./pages/Homepage";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Blog from "./pages/Projects";
+import Contact from "./pages/Projects";
+import NotFound from "./pages/NotFound";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
+
 
 export default function App() {
   return (
-    <div className="window-container">
-      <LeftMainContainer />
-      <RightMainContainer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path ="/" element={<HomePage />}/>
+        <Route path ="/about" element={<About />}/>
+        <Route path ="/projects" element={<Projects />}/>
+        <Route path ="/blog" element={<Blog />}/>
+        <Route path ="/contact" element={<Contact />}/>
+        <Route path ="*" element={<NotFound />}/>
+      </Routes>
+    </Router>
   );
 }

@@ -5,7 +5,7 @@ export default function RightInfoContainer() {
           <div className="rightBox-hello-text">Hello!</div>
           <div className="rightBox-introduction-text">
             <span role="img" aria-label="wave">
-              👋
+              👋&nbsp;
             </span>
             I'm Nishchal. I am a computer science student at &nbsp;
             <a href="https://algomau.ca/" style={{ color: "#0f172a" }}>
