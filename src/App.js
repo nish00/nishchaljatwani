@@ -1,8 +1,8 @@
 import HomePage from "./pages/Homepage";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Blog from "./pages/Projects";
-import Contact from "./pages/Projects";
+import Blog from "./pages/Blog.js";
+import Contact from "./pages/Contact.js";
 import NotFound from "./pages/NotFound";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

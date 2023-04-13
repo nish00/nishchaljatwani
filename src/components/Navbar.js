@@ -5,19 +5,19 @@ export default function NavBar() {
   return (
     <div className="navbar-wrapper">
       <div className="navbar-text">
-        <Link to = "/about">About</Link>
+        <Link to = "/about" style={{color:"#0f172a",textDecoration:'none'}}>About</Link>
       </div>
 
       <div className="navbar-text">
-        <Link to = "/projects">Projects</Link>
+        <Link to = "/projects" style={{color:"#0f172a",textDecoration:'none'}}>Projects</Link>
       </div>
 
       <div className="navbar-text">
-        <Link to = "/blog">Blog</Link>
+        <Link to = "/blog" style={{color:"#0f172a",textDecoration:'none'}}>Blog</Link>
       </div>
 
       <div className="navbar-text">
-        <Link to = "/contact">Contact</Link>
+        <Link to = "/contact" style={{color:"#0f172a",textDecoration:'none'}}>Contact</Link>
       </div>
     </div>
   );
