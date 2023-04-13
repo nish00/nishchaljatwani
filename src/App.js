@@ -5,7 +5,7 @@ import Blog from "./pages/Blog.js";
 import Contact from "./pages/Contact.js";
 import NotFound from "./pages/NotFound";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
 
 
