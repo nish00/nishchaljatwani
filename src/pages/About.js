@@ -1,12 +1,12 @@
+import LeftMainContainer from "../components/LeftMainContainer"
 import NavBar from "../components/Navbar"
+import RightMainContainer from "../components/RightMainContainer"
 
 
 export default function About(){
     return (
         <>
-            <NavBar/>
-            <h1>About us</h1>
+        <h1>About</h1>
         </>
-
     )
 }

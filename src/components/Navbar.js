@@ -1,24 +1,50 @@
-import { Link } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
   return (
     <div className="navbar-wrapper">
-      <div className="navbar-text">
-        <Link to = "/about" style={{color:"#0f172a",textDecoration:'none'}}>About</Link>
-      </div>
+        <NavLink  to = "/about"
+                  className = {({isActive}) => 
+                      isActive ? "navbar-text-active":"navbar-text"
+                } 
+                  style = {({isActive}) => {
+                    return {
+                      color: isActive ? "#0f172a" : "gray",
+                      textDecoration:"none"
+                    };    
+                  }}
+                  > About</NavLink>
 
-      <div className="navbar-text">
-        <Link to = "/projects" style={{color:"#0f172a",textDecoration:'none'}}>Projects</Link>
-      </div>
+        <NavLink  to = "/projects"
+                  className = "navbar-text" 
+                  style = {({isActive}) => {
+                    return {
+                      color: isActive ? "#0f172a" : "gray",
+                      textDecoration:"none",
+                    };    
+                  }}
+                  >Projects</NavLink>
 
-      <div className="navbar-text">
-        <Link to = "/blog" style={{color:"#0f172a",textDecoration:'none'}}>Blog</Link>
-      </div>
 
-      <div className="navbar-text">
-        <Link to = "/contact" style={{color:"#0f172a",textDecoration:'none'}}>Contact</Link>
-      </div>
+        <NavLink  to = "/blog"
+                  className = "navbar-text"     
+                  style = {({isActive}) => {
+                    return {
+                      color: isActive ? "#0f172a" : "gray",
+                      textDecoration:"none"
+                    };    
+                  }}
+                  >Blog</NavLink>
+  
+        <NavLink  to = "/contact"
+                  className = "navbar-text"      
+                  style = {({isActive}) => {
+                    return {
+                      color: isActive ? "#0f172a" : "gray",
+                      textDecoration:"none"
+                    };    
+                  }}
+                  >Contact</NavLink>
     </div>
   );
 }

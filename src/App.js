@@ -7,11 +7,13 @@ import NotFound from "./pages/NotFound";
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles.css";
+import NavBar from "./components/Navbar";
 
 
 export default function App() {
   return (
     <Router>
+      <NavBar/>
       <Routes>
         <Route path ="/" element={<HomePage />}/>
         <Route path ="/about" element={<About />}/>
