@@ -1,8 +1,19 @@
 import { NavLink } from 'react-router-dom';
+import HomeButton from '../icons/house';
 
 export default function NavBar() {
   return (
     <div className="navbar-wrapper">
+        <NavLink  to = "/" 
+                  className="home-button-active"
+                  style = {({isActive}) => {
+                    return {
+                      color: isActive ? "#2563eb" : "gray",
+                    };    
+                  }}>
+          <HomeButton />
+        </NavLink> 
+
         <NavLink  to = "/about"
                   className = {({isActive}) => 
                       isActive ? "navbar-text-active":"navbar-text"
@@ -16,7 +27,9 @@ export default function NavBar() {
                   > About</NavLink>
 
         <NavLink  to = "/projects"
-                  className = "navbar-text" 
+                  className = {({isActive}) => 
+                      isActive ? "navbar-text-active":"navbar-text"
+                }  
                   style = {({isActive}) => {
                     return {
                       color: isActive ? "#0f172a" : "gray",
@@ -27,7 +40,9 @@ export default function NavBar() {
 
 
         <NavLink  to = "/blog"
-                  className = "navbar-text"     
+                  className = {({isActive}) => 
+                      isActive ? "navbar-text-active":"navbar-text"
+                }       
                   style = {({isActive}) => {
                     return {
                       color: isActive ? "#0f172a" : "gray",
@@ -37,7 +52,9 @@ export default function NavBar() {
                   >Blog</NavLink>
   
         <NavLink  to = "/contact"
-                  className = "navbar-text"      
+                  className = {({isActive}) => 
+                      isActive ? "navbar-text-active":"navbar-text"
+                }        
                   style = {({isActive}) => {
                     return {
                       color: isActive ? "#0f172a" : "gray",
