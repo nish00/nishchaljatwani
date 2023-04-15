@@ -24,6 +24,7 @@ body {
 
 /************LEFT CONTAINER BEGINS********************************************************/
 
+/* left container style */
 .left-main-container {
   font-family: "Poppins", sans-serif;
   width:fit-content;
@@ -32,6 +33,7 @@ body {
   position:relative;
 }
 
+/*left container style */
 .left-text {
   position:relative;
   top:50%;
@@ -56,6 +58,7 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 1px 1px lightgray;
 }
+
 /* navigation bar TEXT style */
 .navbar-text {
   font-family: "Poppins", sans-serif;
@@ -76,7 +79,7 @@ body {
   transition: all .2s linear
 }
 
-
+/*navbar-text animation */
 .navbar-text:hover {
   background-color: #e2e8f0cc;
 }
@@ -91,6 +94,7 @@ body {
 
 /************RIGHT TEXT BEGINS************************************************************/
 
+/* right box container */
 .rightBox {
   background-color:white;
   margin: 30px;
@@ -100,6 +104,13 @@ body {
 
 }
 
+/* right box text information wrapper TEXT + HELLO */
+.rightBox-text-wrapper {
+  width:fit-content;
+  padding:150px 80px 0 80px;
+}
+
+/* right box HELLO text */
 .rightBox-hello-text {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
   --tw-gradient-from: #2563eb;
@@ -118,12 +129,7 @@ body {
   transition: all 3s linear;
 }
 
-.rightBox-text-wrapper {
-  width:fit-content;
-  padding:100px 30px 0 30px;
-
-}
-
+/* right box text information wrapper */
 .rightBox-introduction-text {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -132,6 +138,29 @@ body {
   line-height: 30px;
   padding-top:50px;
 }
+
+.wave-hand {
+  scale: 1.5;
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) } 
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
 
 /************RIGHT TEXT ENDS************************************************************/
 
