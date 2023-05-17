@@ -6,6 +6,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@fontsource/pacifico": "^4.5.9",
     "@fontsource/roboto": "^4.5.8",
     "loader-utils": "3.2.1",
     "react": "18.2.0",

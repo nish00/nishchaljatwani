@@ -11,9 +11,9 @@ export default function VectorGraphics() {
                     <FerrisWheel/>
             </div>
             <div className="bottom-rectangle"></div>
-            <div className="bottom-text">Made with &nbsp;<span role="img" aria-label="love" className ="heart-beat">
+            <div className="bottom-text">Made with <span role="img" aria-label="love" className ="heart-beat">
               ❤️
-            </span>{" "} in Canada</div>
+            </span>{" "} in Canada 🇨🇦</div>
           </div>
     )
 }

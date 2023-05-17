@@ -1,6 +1,7 @@
 import GitHub from "../icons/GitHub";
 import Email from "../icons/Email";
 import Linkedin from "../icons/LinkedIn";
+import "@fontsource/pacifico";
 
 export default function RightInfoContainer() {
     return (

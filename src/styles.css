@@ -95,20 +95,35 @@ body {
 
 /* right box HELLO text */
 .rightBox-hello-text {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #2563eb;
-  --tw-gradient-to: #9333ea;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   font-size: 120px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-weight: 500;
   letter-spacing: 0.2px;
+  color:#3c3c3c;
+  font-weight: lighter;
+  
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+/* hello text animation */
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* right box text information wrapper */
@@ -163,7 +178,7 @@ body {
 /* main vector rectangle box */
 .vector-bottom-bar {
   position:absolute;
-  bottom:50px;
+  bottom:30px;
   width:100%;
 }
 
@@ -174,10 +189,13 @@ body {
   position:relative;
 }
 
+/* silhouette */
+
+
 /* main rectangle line bottom */
 .bottom-rectangle {
   width:auto;
-  height: 6px;
+  height: 4px;
   background-color:#6f6f6f ;
   margin-left: 80px;
   margin-right: 80px;
@@ -186,8 +204,8 @@ body {
 /* ferris wheel */
 #ferris-wheel {
   position:absolute;
-  left:371px;
-  top:47px;
+  left:242.25px;
+  top:31.25px;
   animation-name: spin;
   animation-duration: 18000ms;
   animation-iteration-count: infinite;

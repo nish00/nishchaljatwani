@@ -1,7 +1,7 @@
 export default function FerrisWheel() {
     return (
         <div id="ferris-wheel">
-            <svg width="100" height="99" viewBox="0 0 127 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="50" height="49" viewBox="0 0 127 126" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M68.5684 64.3356C68.5684 66.7628 66.6 68.7312 64.1728 68.7312C61.7456 68.7312 59.7772 66.7628 59.7772 64.3356C59.7772 61.9084 61.7456 59.94 64.1728 59.94C66.6 59.9252 68.5684 61.8936 68.5684 64.3356Z" fill="#6E6E6E"/>
                 <path d="M63.8028 63.5512H124.956V64.3208H63.8028V63.5512Z" fill="#6E6E6E"/>
                 <path d="M2.64921 63.5512H63.8028V64.3208H2.64921V63.5512Z" fill="#6E6E6E"/>
