@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7cd6e14.css",
-    "main.js": "/static/js/main.e1a7c902.js",
-    "index.html": "/index.html",
-    "main.e7cd6e14.css.map": "/static/css/main.e7cd6e14.css.map",
-    "main.e1a7c902.js.map": "/static/js/main.e1a7c902.js.map"
+    "main.css": "/nishchaljatwani/static/css/main.e7cd6e14.css",
+    "main.js": "/nishchaljatwani/static/js/main.e1a7c902.js",
+    "index.html": "/nishchaljatwani/index.html",
+    "main.e7cd6e14.css.map": "/nishchaljatwani/static/css/main.e7cd6e14.css.map",
+    "main.e1a7c902.js.map": "/nishchaljatwani/static/js/main.e1a7c902.js.map"
   },
   "entrypoints": [
     "static/css/main.e7cd6e14.css",
