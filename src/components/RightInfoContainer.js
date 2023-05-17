@@ -1,6 +1,5 @@
 export default function RightInfoContainer() {
     return (
-      <div className="rightBox">
         <div className="rightBox-text-wrapper">
           <div className="rightBox-hello-text">Hello!</div>
           <div className="rightBox-introduction-text">
@@ -34,7 +33,6 @@ export default function RightInfoContainer() {
 
 
         </div>
-      </div>
     );
   }
   

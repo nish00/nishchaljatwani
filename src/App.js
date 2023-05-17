@@ -14,15 +14,17 @@ import NavBar from "./components/Navbar";
 export default function App() {
   return (
     <Router>
-      <NavBar/>
-      <Routes>
-        <Route path ="/" element={<HomePage />}/>
-        <Route path ="/about" element={<About />}/>
-        <Route path ="/projects" element={<Projects />}/>
-        <Route path ="/blog" element={<Blog />}/>
-        <Route path ="/contact" element={<Contact />}/>
-        <Route path ="*" element={<NotFound />}/>
-      </Routes>
+        <NavBar/>
+        <div className="rightBox">
+          <Routes>
+            <Route path ="/" element={<HomePage />} />
+            <Route path ="/about" element={<About />}/>
+            <Route path ="/projects" element={<Projects />}/>
+            <Route path ="/blog" element={<Blog />}/>
+            <Route path ="/contact" element={<Contact />}/>
+            <Route path ="*" element={<NotFound />}/>
+          </Routes>
+      </div>
     </Router>
   );
 }
