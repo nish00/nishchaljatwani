@@ -140,9 +140,21 @@ body {
   100% { transform: rotate( 0.0deg) }
 }
 
+/* links box wrapper */
+.link-sites {
+  display:flex;
+  padding-top: 50px;
+}
 
+/* link github wrapper */
+.link-github {
+  padding-right: 30px;
+}
 
-
+/* link linkedin wrapper */
+.link-linkedin {
+  padding-right: 30px;
+}
 /************RIGHT TEXT ENDS************************************************************/
 
 /************RIGHT CONTAINER ENDS********************************************************/
