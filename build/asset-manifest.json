@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nishchaljatwani/static/css/main.bb32cc1f.css",
+    "main.css": "/nishchaljatwani/static/css/main.8b571d42.css",
     "main.js": "/nishchaljatwani/static/js/main.2ab71bca.js",
     "static/media/pacifico-all-400-normal.woff": "/nishchaljatwani/static/media/pacifico-all-400-normal.8f19c0296562a647f0a0.woff",
     "static/media/pacifico-latin-400-normal.woff2": "/nishchaljatwani/static/media/pacifico-latin-400-normal.f36bb0347eecd87d78af.woff2",
@@ -9,11 +9,11 @@
     "static/media/pacifico-cyrillic-400-normal.woff2": "/nishchaljatwani/static/media/pacifico-cyrillic-400-normal.12b0288f7a1df3155d42.woff2",
     "static/media/pacifico-vietnamese-400-normal.woff2": "/nishchaljatwani/static/media/pacifico-vietnamese-400-normal.bd5387ce81f7c383a0a3.woff2",
     "index.html": "/nishchaljatwani/index.html",
-    "main.bb32cc1f.css.map": "/nishchaljatwani/static/css/main.bb32cc1f.css.map",
+    "main.8b571d42.css.map": "/nishchaljatwani/static/css/main.8b571d42.css.map",
     "main.2ab71bca.js.map": "/nishchaljatwani/static/js/main.2ab71bca.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb32cc1f.css",
+    "static/css/main.8b571d42.css",
     "static/js/main.2ab71bca.js"
   ]
 }
