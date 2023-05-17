@@ -8,16 +8,17 @@
 /* style for body element */
 body {
   min-height: 100vh;
-  width: 100%;
+  width: 50%;
   background-color: rgb(226 232 240 / 80%);
+  margin:auto;
 }
 
 /************MAIN CONTAINER BEGINS********************************************************/
 
 .window-container {
-  display:flex;
   width:inherit;
   min-height:100vh;
+  position: relative;
 }
 
 /************MAIN CONTAINER ENDS********************************************************/
@@ -87,8 +88,9 @@ body {
 
 /* right box text information wrapper TEXT + HELLO */
 .rightBox-text-wrapper {
-  width:50%;
+  width:100%;
   padding:150px 80px 0 80px;
+  height:fit-content;
 }
 
 /* right box HELLO text */
@@ -103,11 +105,10 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 100px;
+  font-size: 120px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0.2px;
-  transition: all 3s linear;
 }
 
 /* right box text information wrapper */
@@ -156,6 +157,66 @@ body {
   padding-right: 30px;
 }
 /************RIGHT TEXT ENDS************************************************************/
+
+/************VECTOR AREA BEGINS*********************************************************/
+
+/* main vector rectangle box */
+.vector-bottom-bar {
+  position:absolute;
+  bottom:50px;
+  width:100%;
+}
+
+/* main graphics box */
+.vector-graphics {
+  display: flex;
+  padding: 0 80px 0 80px;
+  position:relative;
+}
+
+/* main rectangle line bottom */
+.bottom-rectangle {
+  width:auto;
+  height: 6px;
+  background-color:#6f6f6f ;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* ferris wheel */
+#ferris-wheel {
+  position:absolute;
+  left:371px;
+  top:47px;
+  animation-name: spin;
+  animation-duration: 18000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+/* ferris wheel animation */
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+} 
+
+
+/************VECTOR AREA END************************************************************/
+
+/* bottom text on make */
+.bottom-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+  margin-left:80px;
+  padding-top:10px;
+
+}
 
 /************RIGHT CONTAINER ENDS********************************************************/
 
