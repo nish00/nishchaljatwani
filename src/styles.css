@@ -89,7 +89,7 @@ body {
 /* right box text information wrapper TEXT + HELLO */
 .rightBox-text-wrapper {
   width:100%;
-  padding:150px 80px 0 80px;
+  padding:100px 80px 0 80px;
   height:fit-content;
 }
 
